@@ -326,3 +326,27 @@ body{
     font-size: 1rem;
   }
 }
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-ingredients {
+  font-size: 0.9em;
+  color: #555;
+  margin: 2px 50px 0 0;
+  flex-basis: 100%; /* make ingredients go full width below the name */
+}
+
+.item-price {
+  font-weight: bold;
+  margin-left: auto;
+}
