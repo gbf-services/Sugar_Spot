@@ -50,6 +50,8 @@ body{
   height:48px;
   object-fit:contain;
   border-radius:10px;
+
+
 }
 .brand-name{
   font-weight:700;
@@ -221,11 +223,13 @@ body{
 }
 
 .menu-item {
-  background: white;
+  --bg: #fff6ec;
+  --accent: #5b2f14; /* chocolate brown */
+  --accent-2: #e33b3b; /* strawberry red for accents */
+  --muted: #6b4b3a;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 5px 18px rgba(0,0,0,0.06);
   transition: 0.2s ease;
 }
 
@@ -260,4 +264,65 @@ body{
   border-radius: 8px;
   font-weight: bold;
   font-size: 0.9rem;
+}
+.menu-section {
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 6px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+.item-price {
+  font-weight: 600;
+}
+
+.menu-section {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Make it look perfect on all screens */
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 1.8rem;
+  }
+  .menu-item {
+    font-size: 1rem;
+  }
 }
